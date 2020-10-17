@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="au.edu.unsw.business.infs2605.W4E1IndiefyLoginScreen.TracksScreenController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Text text="Welcome to Indiefy" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="200"/>
+    <Text text="Haifan Lin z5216901" AnchorPane.topAnchor="75.0" AnchorPane.leftAnchor="200"/>
+    <Text text="here are your favourite tracks" AnchorPane.leftAnchor="50" AnchorPane.topAnchor="150"/>
+    <TableView fx:id="trackView" AnchorPane.topAnchor="175" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50"
+               AnchorPane.bottomAnchor="50">
+        <columns>
+            <TableColumn text="Track"><cellValueFactory><PropertyValueFactory property="track"/></cellValueFactory> </TableColumn>
+            <TableColumn text="Artist"><cellValueFactory><PropertyValueFactory property="artist"/></cellValueFactory> </TableColumn>
+            <TableColumn text="Album"><cellValueFactory><PropertyValueFactory property="album"/></cellValueFactory> </TableColumn>
+            <TableColumn text="Genre"><cellValueFactory><PropertyValueFactory property="genre"/></cellValueFactory> </TableColumn>
+        </columns>
+    </TableView>
+
+</AnchorPane>
